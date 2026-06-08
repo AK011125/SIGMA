@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Basic</title>
+</head>
+<body>
+    <form action="/action"> <!--after clicking the button what action to be perform-->
+        Simple Input : 
+        <input>
+        <br>
+        Username : 
+        <input type="text" placeholder="Enter Username">
+        <br>
+        Password : 
+        <input type="password">
+        <br>
+        Number :
+        <input type="number">
+        <br>
+        <label for="time">Time : </label> <!--using id to write labels-->
+        <input type="time" id="time">
+        <br>
+        <label>
+            color:
+        <input type="color">
+        </label>
+        <!-- by using label both color word hand box use as a same entity -->
+        <br>
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+        <br>
+
+        <input type="checkbox" id="age" name="age">
+        <label for="age">I am 18+</label>
+
+    </form>
+    <hr>
+
+    <form action="/server">
+        <label for="username">Username : </label>
+        <input type="text" placeholder="enter username" id="username" name="user">
+        <br>
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" placeholder="enter password" id="password" name="pass">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <form action="https://www.youtube.com/results?">
+        <label for="username">Username : </label>
+        <input type="text" placeholder="enter username" id="username" name="search_query">
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <!-- create a form to search something on google -->
+
+    <form action="https://www.google.com/search?">
+        <label for="search">Google Search</label>
+        <input type="text" placeholder="type here" id="search" name="q">
+        <button type="submit">Search</button>
+    </form>
+
+    <form action="/server">
+        <hr>
+        <input type="radio" id="gender" name="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="Female">
+        <label for="gender">Female</label>
+        <button type="submit">Submit</button>
+        <!-- here id=value will pass like gender=Male -->
+
+        <br>
+        <select name="profession" id="profession">
+            <option value="student">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+
+        <hr>
+        <label for="vol">Select your volume level : </label>
+        <input type="range" id="vol" min="0" max="100" name="vol" value="70">
+        <button>submit</button>
+
+        <hr>
+        <br>
+        <label for="feedback">Please give your valuable feedback : </label>
+        <textarea id="feedback" name="feedback" rows="5" cols="60"></textarea>
+        <button>submit</button>
+    </form>
+</body>
+</html>

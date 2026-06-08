@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <form action="/server">
+        <b>Registration Form</b>
+        <br>
+        <br>
+        <input type="text" placeholder="First Name" name="fname">
+        <input type="text" placeholder="Last Name" name="lname">
+        <br>
+
+        <label for="Gender">Please select gender</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        Do you agree to all terms of service?
+        <input type="checkbox" id="check">
+        <label for="check">Yes, I agree</label>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+
+    <hr>
+
+    <table border="black">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</hr>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr>
+    <label for="name">Name :</label>
+    <input type="text" id="name">
+
+    <br>
+    <br>
+
+    <label for="gender">Sex : </label>
+    <input type="radio" id="sex" value="m" name="gender">
+    <label for="sex">Male</label>
+    <input type="radio" id="sex" value="f" name="gender">
+    <label for="sex">Female</label>
+
+    <br>
+    <br>
+
+    <label for="Country">Country : </label>
+    <select name="Country" id="Country">
+        <option>Select an option</option>
+        <option value="Ind">India</option>
+        <option value="us">US</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <br>
+    <br>
+    <label for="message">Message : </label>
+    <br>
+    <textarea id="message" rows="3" cols="30"></textarea>
+
+    <br>
+    <br>
+    <input type="checkbox" id="check">
+    <lable for="check">Subscribe?</lable>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+
+    <hr>
+    <form action="/action">
+        <h2>Feedback Form</h2>
+        <label for="fname">Name : </label>
+        <input type="text" placeholder="Write your name" id="fname">
+        <br>
+        <br>
+        <label for="mail">Email : </label>
+        <input type="text" placeholder="Write your email" id="mail">
+        <br>
+        <br>
+        <label for="fmsg">Message : </label>
+        <br>
+        <textarea id="fmsg " rows="5"></textarea>
+        <br>
+        <br>
+        <label for="rate" >Rate us out of 5 : </label>
+        <br>
+        <input type="radio" value="1" id="rate" name="rating">
+        <label for="rate">1</label>
+        <br>
+        <input type="radio" value="2" id="rate" name="rating">
+        <label for="rate">2</label>
+        <br>
+        <input type="radio" value="3" id="rate" name="rating">
+        <label for="rate">3</label>
+        <br>
+        <input type="radio" value="4" id="rate" name="rating">
+        <label for="rate">4</label>
+        <br>
+        <input type="radio" value="5" id="rate" name="rating">
+        <label for="rate">5</label>
+        <br>
+        <br>
+        <button type="submit">Send your message!</button>
+    </form>
+    <hr>
+
+</body>
+</html>
