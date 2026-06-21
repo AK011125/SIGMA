@@ -1,0 +1,66 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h3{
+    color: #b92b27;
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote{
+    background-color: green;
+    color: white;
+}
+
+/* descendant selector */
+/* it select all anchor tags which are just inside the paragraph tag */
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+/* we can also do it like this .post a means post class k andar vale anchor tag */
+
+/* for multilevel  */
+nav ul li a {
+    color: hotpink;
+}
+
+/* adjacent sibling combinators */
+/* use + in between both p + h3 -> it implies use that h3 which is just after p */
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+/* child combinator */
+/* we can only go 1 level deep with this */
+div > input{
+    background-color: darksalmon;
+}
+
+/* attribute selector */
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: green;
+}
+/* it will be visible ehwn we write some text in that area */
+
+input[type]{
+    background-color: orange;
+}
