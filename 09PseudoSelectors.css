@@ -1,0 +1,75 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h3{
+    color: #b92b27;
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote{
+    background-color: green;
+    color: white;
+}
+
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+div > input{
+    background-color: darksalmon;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: green;
+}
+
+input[type]{
+    background-color: orange;
+}
+
+/* hover */
+button:hover{
+    background-color: black;
+    color: white;
+}
+/* active means after click */
+button:active{
+    background-color: hotpink;
+    color: black;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold ;
+}
+
+div:nth-of-type(2n){                      /*so it will change background color of every 2nd div */
+    background-color: wheat;            /* if we want to change only one div so write its no */
+}
